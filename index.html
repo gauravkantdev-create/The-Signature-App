@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signature</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- boot strap is linked here  in above link  -->
+
+    <!-- in given style tag we style the color of canva  by using internal css  that we built in this project -->
+    <style>
+      .canvas {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- this is the main  div that cover the entire part of the html desigen in it that we do change in it -->
+
+    <div class="main">
+      <!-- this is the  div tag with class named top   that contain the  head part of the designed page that we  desigen in this code -->
+      <div class="top">
+        <!-- this div contain the  color picker block in thie html page -->
+        <div class="block">
+          <p>Text color picker</p>
+          <input class="form-control" id="colorpicker" type="color" />
+        </div>
+        <!-- this div contain the background changing block in the html web page -->
+
+        <div class="block">
+          <p>Background</p>
+          <input class="form-control" id="canvascolor" type="color" />
+        </div>
+
+        <!-- this div contain the font size list  that help the user to change the font size in the given html web pAge -->
+        <div class="block">
+          <p>Fontsize</p>
+          <select id="fontsize">
+            <option value="5">5px</option>
+            <option value="10">10px</option>
+            <option value="20">20px</option>
+            <option value="30">30px</option>
+            <option value="40">40px</option>
+          </select>
+        </div>
+
+        <!-- this div contain the  decoration of canva  with inline css that will  show on the html web page-->
+      </div>
+
+      <canvas class="canvas" id="mycanvas" width="800" height="500"></canvas>
+
+      <!-- this div contain the bottom part of the page  that consist the following buttons i.e
+ 1. clear button 
+ 2. save and download button  and 
+ 3.  reterive saved signature button .
+ -->
+
+      <div class="bottom">
+        <button type="button" class="btn btn-danger" id="clearbutton">
+          Clear
+        </button>
+        <button type="button" class="btn btn-success" id="savebutton">
+          Save & Download
+        </button>
+        <button type="button" class="btn btn-warning" id="retrievebutton">
+          Retrieve saved signature
+        </button>
+      </div>
+    </div>
+
+    <!-- in script tag  we linked the js file script.js in which we gave command to the  web page of html to work in efficient and profesional
+     -->
+    <script src="script.js"></script>
+  </body>
+</html>
